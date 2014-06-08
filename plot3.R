@@ -21,8 +21,7 @@ mynewfile$Sub_metering_2 = as.numeric(as.character(mynewfile$Sub_metering_2))
 mynewfile$Sub_metering_3 = as.numeric(as.character(mynewfile$Sub_metering_3))
 
 #open png device
-png("plot3.png",width = 480, height = 480, units = "px", 
-    ylab="Global Active Power",xlab="", bg="white")
+png("plot3.png",width = 480, height = 480, units = "px",bg="white")
 
 with(mynewfile, {
         
@@ -33,7 +32,7 @@ with(mynewfile, {
         y3<-mynewfile$Sub_metering_3
         
         #create blank plot
-        plot(x,y1,type="n")
+        plot(x,y1,ylab="Energy sub metering", type="n",xlab="")
         #add each Sub_metering variable
         lines(x,y2,col="red")
         lines(x,y1)
