@@ -61,7 +61,8 @@ with(mynewfile, {
         
         ##add legend
         legend("topright",pch="_____",col=c("black","red","blue"), 
-               legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"))
+               legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),
+               bty="n")
         
         ##create plot for Global reactive power to days of week
         plot(mynewfile$Time,mynewfile$Global_reactive_power,
