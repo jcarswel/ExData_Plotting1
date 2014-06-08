@@ -21,7 +21,8 @@ mynewfile$Sub_metering_2 = as.numeric(as.character(mynewfile$Sub_metering_2))
 mynewfile$Sub_metering_3 = as.numeric(as.character(mynewfile$Sub_metering_3))
 
 #open png device
-png("plot3.png",width = 480, height = 480, units = "px", bg="white")
+png("plot3.png",width = 480, height = 480, units = "px", 
+    ylab="Global Active Power",xlab="", bg="white")
 
 with(mynewfile, {
         
